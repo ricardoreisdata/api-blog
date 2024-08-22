@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 app.config['SECRET_KEY'] = '123123'
 db_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'blog.db')
-app.config['SQLALCHEMY_DATABASE_URI'] = f'sqlite:///{db_path}'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres.hxnxjyykglbqnibxbdyu:KkX3PxEdCYaTft8S@aws-0-us-west-1.pooler.supabase.com:6543/postgres'
 app.config['TEMPLATES_AUTO_RELOAD'] = True
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
 
