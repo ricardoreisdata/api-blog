@@ -206,4 +206,4 @@ def excluir_autor(autor, id_autor):
     return jsonify({'mensagem': 'Autor excluído com sucesso!'})
 
 
-app.run(port=5000, host='localhost', debug=False)
+app.run(host='0.0.0.0', port=5000, debug=False)
